@@ -44,5 +44,6 @@ class Program
         Console.WriteLine("counter är " + counter);
         counter--;
         Console.WriteLine("counter är " + counter);
+        Console.WriteLine("Testa om jag kan ändra i din repository");
     }
 }
