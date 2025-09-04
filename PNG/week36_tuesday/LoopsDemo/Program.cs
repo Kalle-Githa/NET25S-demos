@@ -38,6 +38,7 @@
                 break;
             }
             Console.WriteLine(k);
+            //Testar om jag kan pusha detta :)
         }
     }
 }
