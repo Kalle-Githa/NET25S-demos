@@ -2,13 +2,13 @@ class Account
 {
     // Properties
     public string Username { get; private set; } // Readable outside, settable inside
-    private string Password;                     // Private: cannot be accessed outside class
-    public string Email { get; set; }            // Public: read and write freely
-    public bool Newsletter { get; set; }         // Simple boolean
+    private string Password; // Private: cannot be accessed outside class
+    public string Email { get; set; } // Public: read and write freely
+    public bool Newsletter { get; set; } // Simple boolean
 
     public Account(string username, string password, string email)
     {
-        Username = username;
+        Username = username; // Username är själva programet. = username är ett namn man namger själv lika järna varit Usename = bajs;
         Password = password;
         Email = email;
         Newsletter = false; // default value
@@ -17,7 +17,7 @@ class Account
     // method: simplified login
     public bool Login(string username, string password)
     {
-        return Username == username && Password == password;
+        return Username == username && Password == password; // alså det som finns i username som är degen
     }
 
     // method: simplified update of user
