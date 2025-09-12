@@ -2,28 +2,28 @@
 {
     static void Main()
     {
-        // // arv + polymorfism
-        // BankAccount personalAcc = new PersonalAccount("P-891012", 1337.37, "1234-567-890");
-        // BankAccount savingsAcc = new SavingsAccount("S-891012", 5000);
+        // arv + polymorfism
+        BankAccount personalAcc = new PersonalAccount("P-891012", 1337.37, "1234-567-890");
+        BankAccount savingsAcc = new SavingsAccount("S-891012", 5000);
 
-        // personalAcc.ShowInfo();
-        // savingsAcc.ShowInfo();
+        personalAcc.ShowInfo();
+        savingsAcc.ShowInfo();
 
-        // Console.WriteLine("\n-- Transactions --");
-        // personalAcc.Deposit(500);
-        // personalAcc.Withdraw(300);
-        // personalAcc.Withdraw(2000);
+        Console.WriteLine("\n-- Transactions --");
+        personalAcc.Deposit(500);
+        personalAcc.Withdraw(300);
+        personalAcc.Withdraw(2000);
 
-        // savingsAcc.Deposit(1000);
-        // savingsAcc.Withdraw(200);
-        // savingsAcc.Withdraw(200);
-        // savingsAcc.Withdraw(200);
-        // savingsAcc.Withdraw(200);
-        // savingsAcc.Withdraw(200); // should hit limit????
+        savingsAcc.Deposit(1000);
+        savingsAcc.Withdraw(200);
+        savingsAcc.Withdraw(200);
+        savingsAcc.Withdraw(200);
+        savingsAcc.Withdraw(200);
+        savingsAcc.Withdraw(200); // should hit limit..?
 
-        // Console.WriteLine("\n-- After transactions --");
-        // personalAcc.ShowInfo();
-        // savingsAcc.ShowInfo();
+        Console.WriteLine("\n-- After transactions --");
+        personalAcc.ShowInfo();
+        savingsAcc.ShowInfo();
 
         Console.WriteLine("\n-- Overloading --");
         Console.WriteLine($"Add med 2 ints: {Calculator.Add(2, 3)}");
